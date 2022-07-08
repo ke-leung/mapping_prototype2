@@ -14,98 +14,114 @@
   <h1 class="title" id="home">361 Prototype</h1>
   <div class="rectangle" id="titlerect"></div>
 
+  <div class="intro">
+    Display light levels, temperature and humidity in your favorite campus locations.</div>
+
+  <br>
+  <div class="intro"> Pick a location from the side menu, the condition you want to see, and find your ideal space.
+  </div>
+
   <!-- Add fixed buttons on the side that link to each the top and each map on the page -->
   <form action="#titlerect">
     <button class="btn" id="btn1" type="submit">Home</button>
   </form>
-  <form action="#floor1">
+  <form action="#header1">
     <button class="btn" id="btn2" type="submit">E5 Floor 6</button>
   </form>
-  <form action="#floor2">
+  <form action="#header2">
     <button class="btn" id="btn3" type="submit">E7 Floor 4</button>
   </form>
-  <form action="#floor3">
+  <form action="#header3">
     <button class="btn" id="btn4" type="submit">E7 Floor 6</button>
   </form>
 
-  <br><br><br><br><br><br><br><br><br>
+  <br><br><br><br><br><br><br><br>
+
+  <!-- Add map of E5 Floor 6 -->
+<div class="header" id="header1"><strong>E5 Floor 6</strong></div>
+
+  <!-- Add map of E5 Floor 6 -->
+  <img class="map" id="e5f6" src="assets/floor7e5transparent.png" alt="E5 Floor 6 Plan" width="950px">
 
   <!-- Add tabs to the map to switch between visualizing different conditions -->
   <div class="float-container" id="floor1">
 
     <div class="float-child">
-      <button class="tab" id="light1" onclick="light(1)">Light</button>
+      <button class="tab tab1" id="light1" onclick="light(1)">Light</button>
     </div>
     <div class="float-child">
-      <button class="tab" id="temp1" onclick="temp(1)">Temperature</button>
+      <button class="tab tab1" id="temp1" onclick="temp(1)">Temperature</button>
     </div>
     <div class="float-child">
-      <button class="tab" id="humid1" onclick="humid(1)">Humidity</button>
+      <button class="tab tab1" id="humid1" onclick="humid(1)">Humidity</button>
     </div>
   </div>
-
 
   <!-- Add rectangle that change the colour of the room -->
   <div class="rectangle" id="rect1"></div>
 
-  <!-- Add map of E5 Floor 6 -->
-  <img class="map" id="e5f6" src="assets/floor7e5transparent.png" alt="E5 Floor 6 Plan" width="950px">
-
   <!-- Add legend for each of the environmental conditions -->
-  <img class="legend legend1" id="lightlegend1" src="assets/lightlegendtransparent.png" alt="E5 Floor 6 Plan">
-  <img class="legend legend1" id="templegend1" src="assets/temperaturelegendtransparent.png" alt="E5 Floor 6 Plan">
-  <img class="legend legend1" id="humidlegend1" src="assets/humiditylegendtransparent.png" alt="E5 Floor 6 Plan">
+  <img class="legend legend1" id="lightlegend1" src="assets/lightlegendtransparent.png" alt="Light Legend">
+  <img class="legend legend1" id="templegend1" src="assets/temperaturelegendtransparent.png" alt="Temperature Legend">
+  <img class="legend legend1" id="humidlegend1" src="assets/humiditylegendtransparent.png" alt="Humidity Legend">
 
   <br><br><br><br><br><br><br><br><br>
+
+  <!-- Add map of E7 Floor 4 -->
+  <div class="header" id="header2"><strong>E7 Floor 4</strong></div>
+
+  <!-- Add map of E7 Floor 4 -->
+  <img class="map" id="e7f4" src="assets/e7floor4transparent.jpg" alt="E7 Floor 4 plan" width="950px">
 
   <!-- Add tabs to the map to switch between visualizing different conditions -->
   <div class="float-container" id="floor2">
     <div class="float-child">
-      <button class="tab" id="light2" onclick="light(2)">Light</button>
+      <button class="tab tab2" id="light2" onclick="light(2)">Light</button>
     </div>
     <div class="float-child">
-      <button class="tab" id="temp2" onclick="temp(2)">Temperature</button>
+      <button class="tab tab2" id="temp2" onclick="temp(2)">Temperature</button>
     </div>
     <div class="float-child">
-      <button class="tab" id="humid2" onclick="humid(2)">Humidity</button>
+      <button class="tab tab2" id="humid2" onclick="humid(2)">Humidity</button>
     </div>
   </div>
 
   <!-- Add rectangle that change the colour of the room -->
   <div class="rectangle" id="rect2"></div>
 
-  <!-- Add map of E7 Floor 4 -->
-  <img class="map" id="e7f4" src="assets/e7floor4transparent.jpg" alt="E7 Floor 4 plan" width="950px">
-
   <!-- Add legend for each of the environmental conditions -->
-  <img class="legend legend2" id="lightlegend2" src="assets/lightlegendtransparent.png" alt="E5 Floor 6 Plan">
-  <img class="legend legend2" id="templegend2" src="assets/temperaturelegendtransparent.png" alt="E5 Floor 6 Plan">
-  <img class="legend legend2" id="humidlegend2" src="assets/humiditylegendtransparent.png" alt="E5 Floor 6 Plan">
+  <img class="legend legend2" id="lightlegend2" src="assets/lightlegendtransparent.png" alt="Light Legend">
+  <img class="legend legend2" id="templegend2" src="assets/temperaturelegendtransparent.png" alt="Temperature Legend">
+  <img class="legend legend2" id="humidlegend2" src="assets/humiditylegendtransparent.png" alt="Humidity Legend">
 
   <br><br><br><br><br><br><br><br><br>
+
+  <!-- Add title of E7 Floor 6 -->
+  <div class="header" id="header3"><strong>E7 Floor 6</strong></div>
+
+  <!-- Add map of E7 Floor 6 -->
+  <img class="map" id="e7f6" src="assets/floor7e7transparent.png" alt="E7 Floor 6 plan" width="950px">
+
   <!-- Add tabs to the map to switch between visualizing different conditions -->
   <div class="float-container" id="floor3">
     <div class="float-child">
-      <button class="tab" id="light3" onclick="light(3)">Light</button>
+      <button class="tab tab3" id="light3" onclick="light(3)">Light</button>
     </div>
     <div class="float-child">
-      <button class="tab" id="temp3" onclick="temp(3)">Temperature</button>
+      <button class="tab tab3" id="temp3" onclick="temp(3)">Temperature</button>
     </div>
     <div class="float-child">
-      <button class="tab" id="humid3" onclick="humid(3)">Humidity</button>
+      <button class="tab tab3" id="humid3" onclick="humid(3)">Humidity</button>
     </div>
   </div>
   </div>
   <!-- Add rectangle that change the colour of the room -->
   <div class="rectangle" id="rect3"></div>
 
-  <!-- Add map of E7 Floor 4 -->
-  <img class="map" id="e7f6" src="assets/floor7e7transparent.png" alt="E7 Floor 6 plan" width="950px">
-
   <!-- Add legend for each of the environmental conditions -->
-  <img class="legend legend3" id="lightlegend3" src="assets/lightlegendtransparent.png" alt="E5 Floor 6 Plan">
-  <img class="legend legend3" id="templegend3" src="assets/temperaturelegendtransparent.png" alt="E5 Floor 6 Plan">
-  <img class="legend legend3" id="humidlegend3" src="assets/humiditylegendtransparent.png" alt="E5 Floor 6 Plan">
+  <img class="legend legend3" id="lightlegend3" src="assets/lightlegendtransparent.png" alt="Light Legend">
+  <img class="legend legend3" id="templegend3" src="assets/temperaturelegendtransparent.png" alt="Temperature Legend">
+  <img class="legend legend3" id="humidlegend3" src="assets/humiditylegendtransparent.png" alt="Humidity Legend">
 
   <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 

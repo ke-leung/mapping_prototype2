@@ -25,6 +25,30 @@ body {
     top: 15px;
 }
 
+.intro {
+    position: relative;
+    text-align: center;
+}
+
+.header {
+    position: absolute;
+    left:150px;
+    padding-top: 10px;
+    z-index: 1000;
+}
+
+#header1 {
+    top:425px;
+}
+
+#header2 {
+    top:1050px;
+}
+
+#header3 {
+    top:1705px;
+}
+
 .map {
     position: relative;
     margin-left: 125px;
@@ -67,15 +91,15 @@ body {
 }
 
 .legend1 {
-    top: 570px;
+    top: 480px;
 }
 
 .legend2 {
-    top: 1270px;
+    top: 1130px;
 }
 
 .legend3 {
-    top: 1970px;
+    top: 1770px;
 }
 
 /* Styling for rectangles */
@@ -100,20 +124,19 @@ body {
 }
 
 #rect1 {
-    top: 820px;
+    top: 730px;
     left: 220px;
 }
 
 #rect2 {
-    top: 1310px;
+    top: 1130px;
     left: 200px;
     height: 230px;
     width: 230px;
-
 }
 
 #rect3 {
-    top: 1990px;
+    top: 1768px;
     left: 540px;
     height: 300px;
     width: 130px;
@@ -123,7 +146,7 @@ body {
 .float-container {
     border: 3px;
     padding-left: 125px;
-    padding-top: 50px;
+    padding-top: 0px;
     padding-bottom: 50px;  
 }
 
