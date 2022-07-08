@@ -169,13 +169,13 @@ function getTempColor(value) {
 
     if (value > 30) {
         return "#FF4003";
-    } else if (value > 30 && value <= 28) {
+    } else if (value < 30 && value >= 28) {
         return "#FF5A25";
-    } else if (value > 28 && value <= 26) {
+    } else if (value < 28 && value >= 26) {
         return "#FF8A66";
-    } else if (value > 26 && value <= 24) {
+    } else if (value < 26 && value >= 24) {
         return "#FFBCA7";
-    } else if (value > 24 && value <= 22) {
+    } else if (value < 24 && value >= 22) {
         return "#FFDCD1";
     } else if (value == 22) {
         return "#FFFFFF";
@@ -197,13 +197,13 @@ function getLightColor(value) {
 
     if (value > 1500) {
         return "#FFE601";
-    } else if (value > 1500 && value <= 1250) {
+    } else if (value < 1500 && value >= 1250) {
         return "#FFEA2A";
-    } else if (value > 1250 && value <= 1000) {
+    } else if (value < 1250 && value >= 1000) {
         return "#FFF063";
-    } else if (value > 1000 && value <= 750) {
+    } else if (value < 1000 && value >= 750) {
         return "#FFF59C";
-    } else if (value > 750 && value <= 500) {
+    } else if (value < 750 && value >= 500) {
         return "#FFFACA";
     } else if (value == 500) {
         return "#FFFFFF";
@@ -221,9 +221,9 @@ function getHumidityColor(value) {
 
     if (value > 100) {
         return "#02C68B";
-    } else if (value > 80 && value <= 100) {
+    } else if (value < 100 && value >= 80) {
         return "#36D2A3";
-    } else if (value > 60 && value <= 80) {
+    } else if (value < 80 && value >= 60) {
         return "#A0EAD3";
     } else if (value < 60 && value >= 50) {
         return "#DFF8F0";
