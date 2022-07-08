@@ -23,5 +23,6 @@
   "homepage": "https://github.com/ke-leung/mapping_prototype2#readme",
   "engines": {
     "node": "16.15.1"
-  }
+  },
+  "devDependencies": {}
 }
