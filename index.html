@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>361 Prototype 2</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body class="light-theme">
+    <h1 class="title" id="home">361 Prototype</h1>
+    <div class="rectangle" id="titlerect"></div>
+
+    <form action="#titlerect">
+        <button class="btn" id="btn1" type="submit">Home</button>
+    </form>
+    <form action="#floor1">
+        <button class="btn" id="btn2" type="submit">E5 Floor 6</button>
+    </form>
+    <form action="#floor2">
+        <button class="btn" id="btn3" type="submit">E7 Floor 4</button>
+    </form>
+    <form action="#floor3">
+        <button class="btn" id="btn4" type="submit">E7 Floor 6</button>
+    </form>
+    
+    <br><br><br><br><br><br><br><br><br>
+
+    <div class="float-container" id="floor1">
+
+        <div class="float-child">
+          <button class="tab"  id="light1" onclick="light1()">Light</button>
+        </div>
+        <div class="float-child">
+          <button class="tab"  id="temp1" onclick="temp1()">Temperature</button>
+        </div>
+        <div class="float-child">
+            <button class="tab"  id="humid1" onclick="humid1()">Humidity</button>
+          </div>
+      </div>
+
+      <div class="rectangle" id="lightrect1"></div>
+      <div class="rectangle" id="temprect1"></div>
+      <div class="rectangle" id="humidrect1"></div>
+    <img id="e5f6" src="floor7e5transparent.png" alt="E5 Floor 6 Plan" width="950px">
+    <img class="legend legend1" id="llegend1" src="lightgrad.jpg" alt="LightLegend1">
+    <img class="legend legend1" id="tlegend1" src="tempgrad.jpg" alt="TempLegend1">
+    <img class="legend legend1" id="hlegend1" src="humidgrad.jpg" alt="HumidLegend1">
+
+    <br><br><br><br><br><br><br><br><br>
+
+    <div class="float-container" id="floor2">
+    <div class="float-child">
+      <button class="tab"  id="light2" onclick="light2()">Light</button>
+    </div>
+    <div class="float-child">
+      <button class="tab"  id="temp2" onclick="temp2()">Temperature</button>
+    </div>
+    <div class="float-child">
+        <button class="tab"  id="humid2" onclick="humid2()">Humidity</button>
+      </div>
+  </div>
+  <div class="rectangle" id="lightrect2"></div>
+  <div class="rectangle" id="temprect2"></div>
+  <div class="rectangle" id="humidrect2"></div>
+    <img id="e7f4" src="e7floor4transparent.jpg" alt="E7 Floor 4 plan" width="950px">
+    <img class="legend legend2" id="llegend2" src="lightgrad.jpg" alt="LightLegend2">
+    <img class="legend legend2" id="tlegend2" src="tempgrad.jpg" alt="TempLegend2">
+    <img class="legend legend2" id="hlegend2" src="humidgrad.jpg" alt="HumidLegend2">
+
+    <br><br><br><br><br><br><br><br><br>
+    <div class="float-container" id="floor3">
+
+
+    <div class="float-child">
+      <button class="tab"  id="light3" onclick="light3()">Light</button>
+    </div>
+    <div class="float-child">
+      <button class="tab"  id="temp3" onclick="temp3()">Temperature</button>
+    </div>
+    <div class="float-child">
+        <button class="tab"  id="humid3" onclick="humid3()">Humidity</button>
+      </div>
+  </div>
+  </div>
+  <div class="rectangle" id="lightrect3"></div>
+  <div class="rectangle" id="temprect3"></div>
+  <div class="rectangle" id="humidrect3"></div>
+ <img id="e7f6" src="floor7e7transparent.png" alt="E7 Floor 6 plan" width="950px">
+ <img class="legend legend3" id="llegend3" src="lightgrad.jpg" alt="LightLegend3">
+ <img class="legend legend3" id="tlegend3" src="tempgrad.jpg" alt="TempLegend3">
+ <img class="legend legend3" id="hlegend3" src="humidgrad.jpg" alt="HumidLegend3">
+
+ <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+ <script type="text/javascript" src="app.js"></script>
+ <noscript>You need to enable JavaScript</noscript>
+
+
+</body>
+</html>
