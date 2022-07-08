@@ -1,1 +1,1 @@
-web: start index.html
+web: start index.html && node app.js
