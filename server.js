@@ -1,8 +1,18 @@
+// Run web app in nodejs in order to deploy on heroku
+
 var express = require('express');
+
+// Create app instance with express package
 var app = express();
 
-app.use(express.static(__dirname + '/public')); //__dir and not _dir
+// Let app have access to static files
+app.use(express.static(__dirname + '/public'));
 
-var port = process.env.PORT || 8000; // you can use any port
+// Use process.env.PORT as defined by heroku or 8000 for locally running
+var port = process.env.PORT || 8000;
+
+// Host app on port
 app.listen(port);
-console.log('server on' + port);
+
+// Log for debugging purposes
+//console.log('server on ' + port);
