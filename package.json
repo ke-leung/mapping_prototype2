@@ -11,5 +11,16 @@
   "license": "ISC",
   "dependencies": {
     "csv": "^6.1.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ke-leung/mapping_prototype2.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ke-leung/mapping_prototype2/issues"
+  },
+  "homepage": "https://github.com/ke-leung/mapping_prototype2#readme",
+  "engines": {
+    "node": "16.15.1"
   }
 }

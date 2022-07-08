@@ -1,5 +1,8 @@
 'use strict';
 
+
+//const port = process.env.PORT || 5000
+
 //  Values gathered from process.js
 // LTHdata_floor6_6008_shadow.csv 
 var dataFloor6Room6008 = [
@@ -98,7 +101,7 @@ function averageConditions(arrData){
 
 // function to average all values in a column
 function average(arrData, column){
-    console.log(`average(${JSON.stringify(arrData, null, 2)}, ${JSON.stringify(column, null, 2)})`)
+    //console.log(`average(${JSON.stringify(arrData, null, 2)}, ${JSON.stringify(column, null, 2)})`)
     var sum = 0
     for (let j=0;j<arrData.length;j++){
         //console.log("the value in column %d: ", column)
@@ -106,12 +109,12 @@ function average(arrData, column){
         
         //convert string value to float
         var floatVal = parseFloat(arrData[j][column])
-        console.log(`Parsing float: ${arrData[j][column]} :: ${floatVal}`)
+        //console.log(`Parsing float: ${arrData[j][column]} :: ${floatVal}`)
         sum = sum + floatVal
     }
 
     var average = sum / arrData.length
-    console.log("the average is %d", average)
+    //console.log("the average is %d", average)
     return average;
 }
 
