@@ -73,6 +73,13 @@ var dataFloor6Atrium = [
   [ '7/5/2022', '17:04:33', '1466.9', '24.4', '69.0' ]
 ]
 
+
+var rooms = [dataFloor6Room6008, dataFloor4Room4043, dataFloor6Atrium]
+
+// console.log(dataFloor6Room6008)
+// console.log("from array")
+// console.log(rooms[0])
+
 // Takes array of room conditions as input
 // Returns an array of the average conditions of each data set
 // containing light levels in lux, temperature, and humidity
@@ -124,152 +131,201 @@ function average(arrData, column){
 
 
 
-function light1() {
-    // Find the average light levels of this room
-    var avgLightRoom6008 = average(dataFloor6Room6008,2)
+// function light1() {
+//     // Find the average light levels of this room
+//     var avgLightRoom6008 = average(dataFloor6Room6008,2)
 
-    // Determine the resultant color of the room
-    let color = getLightColor(avgLightRoom6008);
+//     // Determine the resultant color of the room
+//     let color = getLightColor(avgLightRoom6008);
 
-    document.getElementById("lightrect1").style.backgroundColor=color;
-    document.getElementById("llegend1").style.display="block";
-    document.getElementById("tlegend1").style.display="none";
-    document.getElementById("hlegend1").style.display="none";
-    document.getElementById("lightrect1").style.display="block";
-    document.getElementById("temprect1").style.display="none";
-    document.getElementById("humidrect1").style.display="none";
-}
+//     document.getElementById("lightrect1").style.backgroundColor=color;
+//     document.getElementById("llegend1").style.display="block";
+//     document.getElementById("tlegend1").style.display="none";
+//     document.getElementById("hlegend1").style.display="none";
+//     document.getElementById("lightrect1").style.display="block";
+//     document.getElementById("temprect1").style.display="none";
+//     document.getElementById("humidrect1").style.display="none";
+// }
 
 
-function temp1() {
-    var avgTempRoom6008 = average(dataFloor6Room6008,3)
+// function temp1() {
+//     var avgTempRoom6008 = average(dataFloor6Room6008,3)
 
-    // Determine the resultant color of the room
-    let color = getTempColor(avgTempRoom6008);
+//     // Determine the resultant color of the room
+//     let color = getTempColor(avgTempRoom6008);
     
-    document.getElementById("temprect1").style.backgroundColor=color;
-    document.getElementById("llegend1").style.display="none";
-    document.getElementById("tlegend1").style.display="block";
-    document.getElementById("hlegend1").style.display="none";
-    document.getElementById("lightrect1").style.display="none";
-    document.getElementById("temprect1").style.display="block";
-    document.getElementById("humidrect1").style.display="none";
+//     document.getElementById("temprect1").style.backgroundColor=color;
+//     document.getElementById("llegend1").style.display="none";
+//     document.getElementById("tlegend1").style.display="block";
+//     document.getElementById("hlegend1").style.display="none";
+//     document.getElementById("lightrect1").style.display="none";
+//     document.getElementById("temprect1").style.display="block";
+//     document.getElementById("humidrect1").style.display="none";
+// }
+
+
+// function humid1() {
+//     var avgHumidRoom6008 = average(dataFloor6Room6008,4)
+
+//     // Determine the resultant color of the room
+//     let color = getHumidityColor(avgHumidRoom6008);
+
+//     document.getElementById("humidrect1").style.backgroundColor=color;
+//     document.getElementById("llegend1").style.display="none";
+//     document.getElementById("tlegend1").style.display="none";
+//     document.getElementById("hlegend1").style.display="block";
+//     document.getElementById("lightrect1").style.display="none";
+//     document.getElementById("temprect1").style.display="none";
+//     document.getElementById("humidrect1").style.display="block";
+// }
+
+
+// function light2() {
+//     // Find the average light levels of this room
+//     var avgLightRoom4043 = average(dataFloor4Room4043,2)
+
+//     // Determine the resultant color of the room
+//     let color = getLightColor(avgLightRoom4043);
+
+//     document.getElementById("lightrect2").style.backgroundColor=color;
+//     document.getElementById("llegend2").style.display="block";
+//     document.getElementById("tlegend2").style.display="none";
+//     document.getElementById("hlegend2").style.display="none";
+//     document.getElementById("lightrect2").style.display="block";
+//     document.getElementById("temprect2").style.display="none";
+//     document.getElementById("humidrect2").style.display="none";
+// }
+
+
+// function temp2() {
+//     var avgTempRoom4043 = average(dataFloor4Room4043,3)
+
+//     // Determine the resultant color of the room
+//     let color = getTempColor(avgTempRoom4043);
+
+//     document.getElementById("temprect2").style.backgroundColor=color;
+//     document.getElementById("llegend2").style.display="none";
+//     document.getElementById("tlegend2").style.display="block";
+//     document.getElementById("hlegend2").style.display="none";
+
+//     document.getElementById("lightrect2").style.display="none";
+//     document.getElementById("temprect2").style.display="block";
+//     document.getElementById("humidrect2").style.display="none";
+// }
+
+
+// function humid2() {
+//     var avgHumidRoom4043 = average(dataFloor4Room4043,4)
+
+//     // Determine the resultant color of the room
+//     let color = getHumidityColor(avgHumidRoom4043);
+
+//     document.getElementById("humidrect2").style.backgroundColor=color;
+//     document.getElementById("llegend2").style.display="none";
+//     document.getElementById("tlegend2").style.display="none";
+//     document.getElementById("hlegend2").style.display="block";
+//     document.getElementById("lightrect2").style.display="none";
+//     document.getElementById("temprect2").style.display="none";
+//     document.getElementById("humidrect2").style.display="block";
+// }
+
+
+// function light3() {
+//     // Find the average light levels of this room
+//     var avgLightAtrium = average(dataFloor6Atrium,2)
+
+//     // Determine the resultant color of the room
+//     let color = getLightColor(avgLightAtrium);
+
+//     document.getElementById("lightrect3").style.backgroundColor=color;
+//     document.getElementById("llegend3").style.display="block";
+//     document.getElementById("tlegend3").style.display="none";
+//     document.getElementById("hlegend3").style.display="none";
+//     document.getElementById("lightrect3").style.display="block";
+//     document.getElementById("temprect3").style.display="none";
+//     document.getElementById("humidrect3").style.display="none";
+// }
+
+
+// function temp3() {
+//     var avgTempAtrium = average(dataFloor6Atrium,3)
+
+//     // Determine the resultant color of the room
+//     let color = getTempColor(avgTempAtrium);
+
+//     document.getElementById("temprect3").style.backgroundColor=color;
+//     document.getElementById("llegend3").style.display="none";
+//     document.getElementById("tlegend3").style.display="block";
+//     document.getElementById("hlegend3").style.display="none";
+
+//     document.getElementById("lightrect3").style.display="none";
+//     document.getElementById("temprect3").style.display="block";
+//     document.getElementById("humidrect3").style.display="none";
+// }
+
+// function humid3() {
+//     var avgHumidAtrium = average(dataFloor6Atrium,4)
+
+//     // Determine the resultant color of the room
+//     let color = getHumidityColor(avgHumidAtrium);
+
+
+//     document.getElementById("humidrect3").style.backgroundColor=color;
+//     document.getElementById("llegend3").style.display="none";
+//     document.getElementById("tlegend3").style.display="none";
+//     document.getElementById("hlegend3").style.display="block";
+//     document.getElementById("lightrect3").style.display="none";
+//     document.getElementById("temprect3").style.display="none";
+//     document.getElementById("humidrect3").style.display="block";
+// }
+
+//function to pick the right colour, set it, and activate the legend
+function light(mapNumber) {
+    let value = average(rooms[mapNumber-1], 2)
+    console.log("light value for room %d is %d", mapNumber, value)
+    let color = getLightColor(value);
+    console.log(color)
+    document.getElementById(`rect${mapNumber}`).style.backgroundColor = color;
+    activateLightLegend(mapNumber);
 }
 
-
-function humid1() {
-    var avgHumidRoom6008 = average(dataFloor6Room6008,4)
-
-    // Determine the resultant color of the room
-    let color = getHumidityColor(avgHumidRoom6008);
-
-    document.getElementById("humidrect1").style.backgroundColor=color;
-    document.getElementById("llegend1").style.display="none";
-    document.getElementById("tlegend1").style.display="none";
-    document.getElementById("hlegend1").style.display="block";
-    document.getElementById("lightrect1").style.display="none";
-    document.getElementById("temprect1").style.display="none";
-    document.getElementById("humidrect1").style.display="block";
+function temp(mapNumber) {
+    let value = average(rooms[mapNumber-1], 3)
+    console.log("temp value for room %d is %d", mapNumber, value)
+    let color = getTempColor(value);
+    console.log(color)
+    document.getElementById(`rect${mapNumber}`).style.backgroundColor = color;
+    activateTempLegend(mapNumber);
 }
 
-
-function light2() {
-    // Find the average light levels of this room
-    var avgLightRoom4043 = average(dataFloor4Room4043,2)
-
-    // Determine the resultant color of the room
-    let color = getLightColor(avgLightRoom4043);
-
-    document.getElementById("lightrect2").style.backgroundColor=color;
-    document.getElementById("llegend2").style.display="block";
-    document.getElementById("tlegend2").style.display="none";
-    document.getElementById("hlegend2").style.display="none";
-    document.getElementById("lightrect2").style.display="block";
-    document.getElementById("temprect2").style.display="none";
-    document.getElementById("humidrect2").style.display="none";
+function humid(mapNumber) {
+    let value = average(rooms[mapNumber-1], 4)
+    console.log("humidity value for room %d is %d", mapNumber, value)
+    let color = getHumidityColor(value);
+    console.log(color)
+    document.getElementById(`rect${mapNumber}`).style.backgroundColor = color;
+    activateHumidLegend(mapNumber);
 }
 
-
-function temp2() {
-    var avgTempRoom4043 = average(dataFloor4Room4043,3)
-
-    // Determine the resultant color of the room
-    let color = getTempColor(avgTempRoom4043);
-
-    document.getElementById("temprect2").style.backgroundColor=color;
-    document.getElementById("llegend2").style.display="none";
-    document.getElementById("tlegend2").style.display="block";
-    document.getElementById("hlegend2").style.display="none";
-
-    document.getElementById("lightrect2").style.display="none";
-    document.getElementById("temprect2").style.display="block";
-    document.getElementById("humidrect2").style.display="none";
+//function that activates the Light Legend, and deactivates the other legends
+function activateLightLegend(map_number) {
+    document.getElementById(`lightlegend${map_number}`).style.display = "block";
+    document.getElementById(`templegend${map_number}`).style.display = "none";
+    document.getElementById(`humidlegend${map_number}`).style.display = "none";
 }
 
-
-function humid2() {
-    var avgHumidRoom4043 = average(dataFloor4Room4043,4)
-
-    // Determine the resultant color of the room
-    let color = getHumidityColor(avgHumidRoom4043);
-
-    document.getElementById("humidrect2").style.backgroundColor=color;
-    document.getElementById("llegend2").style.display="none";
-    document.getElementById("tlegend2").style.display="none";
-    document.getElementById("hlegend2").style.display="block";
-    document.getElementById("lightrect2").style.display="none";
-    document.getElementById("temprect2").style.display="none";
-    document.getElementById("humidrect2").style.display="block";
+//function that activates the Temperature Legend, and deactivates the other legends
+function activateTempLegend(map_number) {
+    document.getElementById(`lightlegend${map_number}`).style.display = "none";
+    document.getElementById(`templegend${map_number}`).style.display = "block";
+    document.getElementById(`humidlegend${map_number}`).style.display = "none";
 }
 
-
-function light3() {
-    // Find the average light levels of this room
-    var avgLightAtrium = average(dataFloor6Atrium,2)
-
-    // Determine the resultant color of the room
-    let color = getLightColor(avgLightAtrium);
-
-    document.getElementById("lightrect3").style.backgroundColor=color;
-    document.getElementById("llegend3").style.display="block";
-    document.getElementById("tlegend3").style.display="none";
-    document.getElementById("hlegend3").style.display="none";
-    document.getElementById("lightrect3").style.display="block";
-    document.getElementById("temprect3").style.display="none";
-    document.getElementById("humidrect3").style.display="none";
-}
-
-
-function temp3() {
-    var avgTempAtrium = average(dataFloor6Atrium,3)
-
-    // Determine the resultant color of the room
-    let color = getTempColor(avgTempAtrium);
-
-    document.getElementById("temprect3").style.backgroundColor=color;
-    document.getElementById("llegend3").style.display="none";
-    document.getElementById("tlegend3").style.display="block";
-    document.getElementById("hlegend3").style.display="none";
-
-    document.getElementById("lightrect3").style.display="none";
-    document.getElementById("temprect3").style.display="block";
-    document.getElementById("humidrect3").style.display="none";
-}
-
-function humid3() {
-    var avgHumidAtrium = average(dataFloor6Atrium,4)
-
-    // Determine the resultant color of the room
-    let color = getHumidityColor(avgHumidAtrium);
-
-
-    document.getElementById("humidrect3").style.backgroundColor=color;
-    document.getElementById("llegend3").style.display="none";
-    document.getElementById("tlegend3").style.display="none";
-    document.getElementById("hlegend3").style.display="block";
-    document.getElementById("lightrect3").style.display="none";
-    document.getElementById("temprect3").style.display="none";
-    document.getElementById("humidrect3").style.display="block";
+//function that activates the Humidity Legend, and deactivates the other legends
+function activateHumidLegend(map_number) {
+    document.getElementById(`lightlegend${map_number}`).style.display = "none";
+    document.getElementById(`templegend${map_number}`).style.display = "none";
+    document.getElementById(`humidlegend${map_number}`).style.display = "block";
 }
 
 function getTempColor(value) {

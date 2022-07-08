@@ -1,17 +1,19 @@
+/* Setting colour variables */
 :root {
-    --blue: #a8d5e5;
     --white: #FFFFFF;
     --black: #000000;
+    --blue: #Abc9ab;
 }
 
+/* CSS styling for body, title, and maps */
 html {
     scroll-behavior: smooth;
 }
 
 body {
-    background: var(--bg);
-    color: var(--fontColor);
-    font-family: garamond;
+    background: var(--blue);
+    color: var(--black);
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .title {
@@ -23,20 +25,14 @@ body {
     top: 15px;
 }
 
-img {
-    position:relative;
+.map {
+    position: relative;
     margin-left: 125px;
     display: block;
     z-index: 10;
    }
 
-.light-theme {
-    --bg: #Abc9ab;
-    --fontColor: var(--black);
-    --btnBg: var(--black);
-    --btnFontColor: var(--white);
-}
-
+/* Styling for buttons */
 .btn {
     position: fixed;
     top: 180px;
@@ -49,117 +45,81 @@ img {
     background-color: #C5C9C5;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
 #btn2 {
     top: 230px;
 }
+
 #btn3 {
     top: 280px;
 }
+
 #btn4 {
     top: 330px;
 }
 
+/* Styling for legends */
 .legend {
     position: absolute;
-    width:15px;
+    width: 125px;
     display: none;
+    left:1090px;
 }
 
 .legend1 {
-    top: 630px;
-    left:980px;
+    top: 570px;
 }
 
 .legend2 {
-    top: 1330px;
-    left:980px;
+    top: 1270px;
 }
 
 .legend3 {
-    top: 2030px;
-    left:980px;
+    top: 1970px;
 }
 
+/* Styling for rectangles */
 .rectangle {
     position: absolute;
     height: 140px;
-    width: 150px;
+    width: 25%;
     z-index: 9;
     background-color: #d9d9d9;
+    display: block;
   }
 
-#lightrect1 {
-    display: block;
-    top: 820px;
-    left: 220px;
-}
-#temprect1 {
-    display: none;
-    top: 820px;
-    left: 220px;
-}
-#humidrect1 {
-    display: none;
-    top: 820px;
-    left: 220px;
-}
-
-#lightrect2 {
-    display: block;
-    top: 1310px;
-    left: 200px;
-    height: 230px;
-    width: 230px;
-
-}
-#temprect2 {
-    display: none;
-    top: 1310px;
-    left: 200px;
-    height: 230px;
-    width: 230px;
-}
-#humidrect2 {
-    display: none;
-    top: 1310px;
-    left: 200px;
-    height: 230px;
-    width: 230px;
-}
-
-#lightrect3 {
-    display: block;
-    top: 1990px;
-    left: 540px;
-    height: 300px;
-    width: 130px;
-}
-#temprect3 {
-    display: none;
-    top: 1990px;
-    left: 540px;
-    height: 300px;
-    width: 130px;
-}
-#humidrect3 {
-    display: none;
-    top: 1990px;
-    left: 540px;
-    height: 300px;
-    width: 130px;
-}
-
-#titlerect {
+  #titlerect {
     position:relative;
     top: -125px;
-    left: -8px;
-    width: 1262px;
+    left: 0px;
+    width: 100%;
     height:150px;
     background-color: #1A1C1C;
     opacity: 100%;
     z-index:0;
 }
 
+#rect1 {
+    top: 820px;
+    left: 220px;
+}
+
+#rect2 {
+    top: 1310px;
+    left: 200px;
+    height: 230px;
+    width: 230px;
+
+}
+
+#rect3 {
+    top: 1990px;
+    left: 540px;
+    height: 300px;
+    width: 130px;
+}
+
+/* Styling for tabs */
 .float-container {
     border: 3px;
     padding-left: 125px;
